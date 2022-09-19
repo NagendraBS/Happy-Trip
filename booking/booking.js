@@ -2,7 +2,7 @@ import { FlightSchedule } from "../models/travel.js";
 // import { payment } from "../payment/payment.js";
 import { Passenger } from "../models/travel.js";
 let searching = JSON.parse(localStorage.getItem("searching"));
-window.onload = function () {
+function init() {
   document.getElementById("submitBtn").disabled = true;
   let count = JSON.parse(localStorage.getItem("count"));
   var selectedFligthSchedule;
@@ -102,7 +102,10 @@ window.onload = function () {
   };
   localStorage.setItem("newPriceStorage", JSON.stringify(newPrice));
   selectedFligthSchedule.price = newPrice;
-};
+}
+
+init();
+
 var passCount = 0;
 var userInformation = new Array();
 var numberCount =
