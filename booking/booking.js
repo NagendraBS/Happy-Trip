@@ -1,4 +1,4 @@
-import { FlightSchedule } from "../models/travel.js";
+// import { FlightSchedule } from "../models/travel.js";
 // import { payment } from "../payment/payment.js";
 import { Passenger } from "../models/travel.js";
 let searching = JSON.parse(localStorage.getItem("searching"));
