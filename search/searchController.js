@@ -226,7 +226,7 @@ function validateSearchInfo(searching) {
     localStorage.setItem("searching", JSON.stringify(searching));
     // searchmanager.searchManager(searching);
     // searchresults.searchResults(searching);
-    window.open("/searchResult.html");
+    window.open("../HappyTrip/search/searchResult.html");
     // window.location("/search/searchResult.html")
   }
 
